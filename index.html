@@ -2,10 +2,380 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AristoCM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuangda QU - Resume</title>
+    <meta name="description" content="Kuangda QU's personal resume website - Statistics student at SUFE with experience in quantitative finance and machine learning">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Kuangda Qu的个人主页</h1>
-    <h1>Hello ~</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span data-en="KQ" data-zh="曲旷达">KQ</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-en="Home" data-zh="首页">Home</a>
+                <a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a>
+                <a href="#education" class="nav-link" data-en="Education" data-zh="教育">Education</a>
+                <a href="#experience" class="nav-link" data-en="Experience" data-zh="经历">Experience</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-text">中文</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <div class="avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h1 class="hero-name" data-en="Kuangda QU" data-zh="曲旷达">Kuangda QU</h1>
+                <p class="hero-title" data-en="Statistics Student & Quantitative Finance Enthusiast" data-zh="统计学学生 & 量化金融爱好者">Statistics Student & Quantitative Finance Enthusiast</p>
+                <p class="hero-description" data-en="Passionate about data science, machine learning, and financial modeling with hands-on experience in quantitative research and factor mining." data-zh="热衷于数据科学、机器学习和金融建模，在量化研究和因子挖掘方面拥有实践经验。">Passionate about data science, machine learning, and financial modeling with hands-on experience in quantitative research and factor mining.</p>
+                <div class="hero-contact">
+                    <a href="mailto:aristoqu@163.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aristoqu@163.com</span>
+                    </a>
+                    <a href="tel:+8613818386139" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+86-13818386139</span>
+                    </a>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" data-en="Get In Touch" data-zh="联系我">Get In Touch</a>
+                    <a href="#about" class="btn btn-secondary" data-en="Learn More" data-zh="了解更多">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+                <p class="section-subtitle" data-en="Get to know me better" data-zh="更好地了解我">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I am a Statistics student at Shanghai University of Finance and Economics (SUFE), specializing in quantitative finance and machine learning. With extensive experience in financial modeling, factor mining, and data analysis, I am passionate about applying statistical methods to solve real-world financial problems." data-zh="我是上海财经大学统计学专业的学生，专注于量化金融和机器学习。在金融建模、因子挖掘和数据分析方面拥有丰富经验，热衷于运用统计方法解决现实世界的金融问题。">I am a Statistics student at Shanghai University of Finance and Economics (SUFE), specializing in quantitative finance and machine learning. With extensive experience in financial modeling, factor mining, and data analysis, I am passionate about applying statistical methods to solve real-world financial problems.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 data-en="Programming Languages" data-zh="编程语言">Programming Languages</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-en="Data & Analytics" data-zh="数据分析">Data & Analytics</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Stata</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-en="Machine Learning" data-zh="机器学习">Machine Learning</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">CatBoost</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Word2Vec</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-en="Tools & Software" data-zh="工具软件">Tools & Software</h3>
+                        <div class="skills">
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Adobe Suite</span>
+                            <span class="skill-tag">Microsoft Office</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Education" data-zh="教育背景">Education</h2>
+                <p class="section-subtitle" data-en="My academic journey" data-zh="我的学术历程">My academic journey</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-info">
+                            <h3 data-en="Bachelor of Science in Statistics" data-zh="统计学学士学位">Bachelor of Science in Statistics</h3>
+                            <h4 data-en="Shanghai University of Finance and Economics (SUFE)" data-zh="上海财经大学">Shanghai University of Finance and Economics (SUFE)</h4>
+                            <p class="education-period">Sep 2021 - Jun 2025</p>
+                            <p class="education-location" data-en="Shanghai, China" data-zh="上海，中国">Shanghai, China</p>
+                        </div>
+                    </div>
+                    <div class="education-details">
+                        <h5 data-en="Key Coursework:" data-zh="主要课程：">Key Coursework:</h5>
+                        <div class="coursework">
+                            <span class="course" data-en="Advanced Algebra" data-zh="高等代数">Advanced Algebra</span>
+                            <span class="course" data-en="Mathematical Analysis" data-zh="数学分析">Mathematical Analysis</span>
+                            <span class="course" data-en="Programming" data-zh="编程">Programming</span>
+                            <span class="course" data-en="Microeconomics" data-zh="微观经济学">Microeconomics</span>
+                            <span class="course" data-en="Probability Theory" data-zh="概率论">Probability Theory</span>
+                            <span class="course" data-en="Mathematical Statistics" data-zh="数理统计">Mathematical Statistics</span>
+                            <span class="course" data-en="Machine Learning" data-zh="机器学习">Machine Learning</span>
+                            <span class="course" data-en="Stochastic Process" data-zh="随机过程">Stochastic Process</span>
+                            <span class="course" data-en="Regression Analysis" data-zh="回归分析">Regression Analysis</span>
+                            <span class="course" data-en="Corporate Finance" data-zh="公司金融">Corporate Finance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Experience" data-zh="工作经历">Experience</h2>
+                <p class="section-subtitle" data-en="My professional journey" data-zh="我的职业历程">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <!-- Northeast Securities -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="Northeast Securities" data-zh="东北证券">Northeast Securities</h3>
+                            <span class="timeline-period">Sep 2024 - Apr 2025</span>
+                        </div>
+                        <h4 data-en="Financial Innovation Department" data-zh="金融创新部">Financial Innovation Department</h4>
+                        <p class="timeline-location" data-en="Shanghai, China" data-zh="上海，中国">Shanghai, China</p>
+                        <ul class="timeline-achievements">
+                            <li data-en="Independently developed a futures basis model with neural networks to predict impact of basis changes on future relative returns" data-zh="独立开发期货基差模型，使用神经网络预测基差变化对未来相对收益的影响">Independently developed a futures basis model with neural networks to predict impact of basis changes on future relative returns</li>
+                            <li data-en="Processed commodity futures data with standardization methods and enhanced model robustness with feature processing techniques" data-zh="使用标准化方法处理商品期货数据，通过特征处理技术增强模型鲁棒性">Processed commodity futures data with standardization methods and enhanced model robustness with feature processing techniques</li>
+                            <li data-en="Selected China ZZ500 for index enhancement using Python for data cleaning, IC value calculation, and multi-period stability analysis" data-zh="选取中证500进行指数增强，使用Python进行数据清洗、IC值计算和多周期稳定性分析">Selected China ZZ500 for index enhancement using Python for data cleaning, IC value calculation, and multi-period stability analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CITIC Securities -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="CITIC Securities" data-zh="中信证券">CITIC Securities</h3>
+                            <span class="timeline-period">Jul 2024 - Aug 2024</span>
+                        </div>
+                        <h4 data-en="Sales Department" data-zh="销售部">Sales Department</h4>
+                        <p class="timeline-location" data-en="Shanghai, China" data-zh="上海，中国">Shanghai, China</p>
+                        <ul class="timeline-achievements">
+                            <li data-en="Researched financial collapse of a wealth management company, analyzing causes through public resources including bond defaults and market sentiment" data-zh="研究某财富管理公司金融危机，通过公开资源分析原因，包括债券违约和市场情绪">Researched financial collapse of a wealth management company, analyzing causes through public resources including bond defaults and market sentiment</li>
+                            <li data-en="Independently authored August Macro-economic Monthly Report covering domestic and international data trends and market outlook" data-zh="独立撰写八月宏观经济月报，涵盖国内外数据趋势和市场展望">Independently authored August Macro-economic Monthly Report covering domestic and international data trends and market outlook</li>
+                            <li data-en="Participated in multiple top domestic private equity roadshows, summarizing meeting notes and drafting reports" data-zh="参与多场国内顶级私募路演，总结会议纪要并起草报告">Participated in multiple top domestic private equity roadshows, summarizing meeting notes and drafting reports</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Evolution Labs -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="Evolution Labs" data-zh="Evolution Labs">Evolution Labs</h3>
+                            <span class="timeline-period">Jun 2022 - Aug 2022, Jun 2023 - Aug 2023</span>
+                        </div>
+                        <h4 data-en="Factor Mining Engineer Intern" data-zh="因子挖掘工程师实习生">Factor Mining Engineer Intern</h4>
+                        <p class="timeline-location" data-en="Shanghai, China" data-zh="上海，中国">Shanghai, China</p>
+                        <ul class="timeline-achievements">
+                            <li data-en="Replicated Barra-style factor model and expanded it to incorporate 55 China-specific refined factors" data-zh="复刻Barra风格因子模型，并扩展纳入55个中国特色精炼因子">Replicated Barra-style factor model and expanded it to incorporate 55 China-specific refined factors</li>
+                            <li data-en="Utilized NLP to investigate macro fundamental factors and developed Analyst Overbuying/Overselling and News Sentiment factors" data-zh="利用NLP研究宏观基本面因子，开发分析师超买/超卖因子和新闻情绪因子">Utilized NLP to investigate macro fundamental factors and developed Analyst Overbuying/Overselling and News Sentiment factors</li>
+                            <li data-en="Leveraged Pandas, NumPy, and Matplotlib for data preprocessing, identifying 5-6 outstanding factors" data-zh="利用Pandas、NumPy和Matplotlib进行数据预处理，识别出5-6个优秀因子">Leveraged Pandas, NumPy, and Matplotlib for data preprocessing, identifying 5-6 outstanding factors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Research Projects" data-zh="研究项目">Research Projects</h2>
+                <p class="section-subtitle" data-en="Academic and research work" data-zh="学术研究工作">Academic and research work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-award">
+                            <span data-en="Third Prize" data-zh="三等奖">Third Prize</span>
+                        </div>
+                    </div>
+                    <h3 data-en="Credit Default Prediction Based on MIP Optimization and CatBoost" data-zh="基于MIP优化和CatBoost的信用违约预测">Credit Default Prediction Based on MIP Optimization and CatBoost</h3>
+                    <p class="project-period">Mar 2024 - May 2024</p>
+                    <p class="project-description" data-en="Designed a big data-driven method to enhance financial institutions' credit assessment and default risk prediction accuracy using advanced machine learning techniques." data-zh="设计了一种大数据驱动的方法，使用先进的机器学习技术提高金融机构的信用评估和违约风险预测准确性。">Designed a big data-driven method to enhance financial institutions' credit assessment and default risk prediction accuracy using advanced machine learning techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MIP Optimization</span>
+                        <span class="tech-tag">CatBoost</span>
+                        <span class="tech-tag">KMeansSMOTE</span>
+                        <span class="tech-tag">L2 Regularization</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="project-award">
+                            <span data-en="Third Prize" data-zh="三等奖">Third Prize</span>
+                        </div>
+                    </div>
+                    <h3 data-en="Text Vectorization-Based Analysis on Listed Companies' Annual Reports" data-zh="基于文本向量化的上市公司年报分析">Text Vectorization-Based Analysis on Listed Companies' Annual Reports</h3>
+                    <p class="project-period">Sep 2022 - Feb 2023</p>
+                    <p class="project-description" data-en="Built an NLP-based system to analyze 299 annual reports of listed companies in 2021 to assess corporate ESG performance using advanced text processing techniques." data-zh="构建了一个基于NLP的系统，使用先进的文本处理技术分析2021年299家上市公司年报，评估企业ESG表现。">Built an NLP-based system to analyze 299 annual reports of listed companies in 2021 to assess corporate ESG performance using advanced text processing techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Word2Vec</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">TF-IDF</span>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="project-award">
+                            <span data-en="Leadership" data-zh="领导力">Leadership</span>
+                        </div>
+                    </div>
+                    <h3 data-en="SUFE Students Union Media Team" data-zh="上海财经大学学生会媒体部">SUFE Students Union Media Team</h3>
+                    <p class="project-period">Sep 2021 - Jun 2022</p>
+                    <p class="project-description" data-en="Led media projects and coordinated intercollegiate social events, including producing graduation videos and organizing spring outings with 100+ participants." data-zh="领导媒体项目并协调校际社交活动，包括制作毕业视频和组织100多人参与的春游活动。">Led media projects and coordinated intercollegiate social events, including producing graduation videos and organizing spring outings with 100+ participants.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Video Production</span>
+                        <span class="tech-tag">Event Management</span>
+                        <span class="tech-tag">Adobe Suite</span>
+                        <span class="tech-tag">Social Media</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-zh="联系我">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Let's connect and discuss opportunities" data-zh="让我们联系并讨论机会">Let's connect and discuss opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Email" data-zh="邮箱">Email</h4>
+                            <a href="mailto:aristoqu@163.com">aristoqu@163.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Phone" data-zh="电话">Phone</h4>
+                            <a href="tel:+8613818386139">+86-13818386139</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-en="Location" data-zh="位置">Location</h4>
+                            <span data-en="Shanghai, China" data-zh="上海，中国">Shanghai, China</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-hobbies">
+                    <h4 data-en="Hobbies & Interests" data-zh="爱好兴趣">Hobbies & Interests</h4>
+                    <div class="hobbies">
+                        <div class="hobby-item">
+                            <i class="fas fa-palette"></i>
+                            <span data-en="Sketching" data-zh="素描">Sketching</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-basketball-ball"></i>
+                            <span data-en="Basketball" data-zh="篮球">Basketball</span>
+                        </div>
+                        <div class="hobby-item">
+                            <i class="fas fa-chess"></i>
+                            <span data-en="Chess" data-zh="象棋">Chess</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-en="© 2024 Kuangda QU. All rights reserved." data-zh="© 2024 曲旷达。保留所有权利。">© 2024 Kuangda QU. All rights reserved.</p>
+                <p data-en="Built with HTML, CSS, and JavaScript" data-zh="使用 HTML、CSS 和 JavaScript 构建">Built with HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
+
