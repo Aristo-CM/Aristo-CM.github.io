@@ -125,7 +125,7 @@ class ResumeWebsite {
     updateLanguage() {
         const elements = document.querySelectorAll('[data-en][data-zh]');
         elements.forEach(element => {
-            const text = this.currentLang === 'en' 
+            const text = this.currentLang === 'en'
                 ? element.getAttribute('data-en')
                 : element.getAttribute('data-zh');
             element.textContent = text;
@@ -144,9 +144,9 @@ class ResumeWebsite {
         document.documentElement.lang = this.currentLang;
 
         // Update page title
-        document.title = this.currentLang === 'en' 
+        document.title = this.currentLang === 'en'
             ? 'Kuangda QU - Resume'
-            : '曲旷达 - 个人简历';
+            : '瞿旷达 - 个人简历';
     }
 
     // Toggle theme between light and dark
@@ -159,14 +159,14 @@ class ResumeWebsite {
     // Update theme
     updateTheme() {
         document.documentElement.setAttribute('data-theme', this.currentTheme);
-        
+
         // Update theme toggle icon
         const themeToggle = document.getElementById('themeToggle');
         if (themeToggle) {
             const icon = themeToggle.querySelector('i');
             if (icon) {
-                icon.className = this.currentTheme === 'light' 
-                    ? 'fas fa-moon' 
+                icon.className = this.currentTheme === 'light'
+                    ? 'fas fa-moon'
                     : 'fas fa-sun';
             }
         }
@@ -197,14 +197,14 @@ class ResumeWebsite {
     updateActiveNavLink() {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link');
-        
+
         let currentSection = '';
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
-            
+
             if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
                 currentSection = section.getAttribute('id');
             }
@@ -221,11 +221,11 @@ class ResumeWebsite {
     // Animate elements when they come into view
     animateOnScroll() {
         const elements = document.querySelectorAll('.timeline-item, .project-card, .skill-category');
-        
+
         elements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
             const elementVisible = 150;
-            
+
             if (elementTop < window.innerHeight - elementVisible) {
                 element.classList.add('fade-in-up');
             }
@@ -252,7 +252,7 @@ class ResumeWebsite {
         const animatedElements = document.querySelectorAll(
             '.timeline-item, .project-card, .skill-category, .education-card, .contact-item'
         );
-        
+
         animatedElements.forEach(element => {
             observer.observe(element);
         });
@@ -264,7 +264,7 @@ class ResumeWebsite {
         if (window.innerWidth > 768) {
             const navMenu = document.querySelector('.nav-menu');
             const hamburger = document.getElementById('hamburger');
-            
+
             if (navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
             }
@@ -299,9 +299,9 @@ class ResumeWebsite {
 
         let currentText = texts[this.currentLang];
         let index = 0;
-        
+
         heroTitle.textContent = '';
-        
+
         const typeWriter = () => {
             if (index < currentText.length) {
                 heroTitle.textContent += currentText.charAt(index);
@@ -309,18 +309,18 @@ class ResumeWebsite {
                 setTimeout(typeWriter, 50);
             }
         };
-        
+
         typeWriter();
     }
 
     // Add smooth reveal animations
     addRevealAnimations() {
         const revealElements = document.querySelectorAll('.hero-content > *');
-        
+
         revealElements.forEach((element, index) => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(30px)';
-            
+
             setTimeout(() => {
                 element.style.transition = 'all 0.6s ease-out';
                 element.style.opacity = '1';
@@ -333,11 +333,11 @@ class ResumeWebsite {
     initPageAnimations() {
         // Add initial loading animation
         document.body.style.opacity = '0';
-        
+
         window.addEventListener('load', () => {
             document.body.style.transition = 'opacity 0.5s ease-in';
             document.body.style.opacity = '1';
-            
+
             // Add hero animations after page load
             setTimeout(() => {
                 this.addRevealAnimations();
