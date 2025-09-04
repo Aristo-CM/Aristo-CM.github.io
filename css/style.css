@@ -204,6 +204,16 @@ body {
     margin-bottom: var(--spacing-xl);
 }
 
+.avatar-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 使图片变成圆形 */
+    object-fit: cover; /* 确保图片填充整个区域而不变形 */
+    box-shadow: var(--shadow-lg); /* 添加阴影效果 */
+    margin: 0 auto; /* 如果需要居中显示 */
+    display: block; /* 确保 margin auto 生效 */
+}
+
 .avatar-placeholder {
     width: 150px;
     height: 150px;
