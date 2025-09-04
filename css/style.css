@@ -205,8 +205,8 @@ body {
 }
 
 .avatar-image {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%; /* 使图片变成圆形 */
     object-fit: cover; /* 确保图片填充整个区域而不变形 */
     box-shadow: var(--shadow-lg); /* 添加阴影效果 */
